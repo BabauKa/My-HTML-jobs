@@ -1,4 +1,4 @@
-# MyHtmlJobs
+# MyHTML Jobs
 
 Здесь будут располагаться мои первые практические работы по языку разметок HTML.
 
@@ -6,4 +6,4 @@
 
 1. First Website - simple website
 2. Website different tags
-3. Lists
+3. Website different lists
