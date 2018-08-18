@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  
+    <title> Различные формы html </title>
+  </head>
+  
+  <body>
+  
+  <!-- Кнопка отправления type="submit" -->
+  <!-- Обычная кнопка type="button" -->
+    <h1> <center> Работа с различными формами HTML </center> </h1>
+	
+	<p> Текстовая форма : </p>
+	
+    <!-- Без таблицы -->
+	<form>
+	<p> Введите ФИО <p> <br>
+	Имя: <input type="text" name="firstname"/> <br>
+	Фамилия: <input type="text" name="lastname"/> <br>
+	Отчество: <input type="text" name="lastname1"/> <br>
+	</form>
+	
+	<br>
+	<!-- С таблицей -->
+	<p> При помощи таблицы </p>
+	<form>
+	  <table border="0">
+	    <tr>
+		  <td colspan="2" align="center" width="300px"> Введите ФИО </td>
+		</tr>
+		
+		<tr>
+		  <td width="50px" align="center"> Имя: </td>
+		  <td align="center"> <input type="text" name="firstname"/> </td>
+		</tr>
+		
+		<tr>
+		  <td width="50px" align="center"> Фамилия: </td>
+		  <td align="center"> <input type="text" name="lastname"/> </td>
+		</tr>
+		
+		<tr>
+		  <td width="50px" align="center"> Отчество: </td>
+		  <td align="center"> <input type="text" name="lastname1"/> </td>
+		</tr>
+		
+		<tr>
+		  <td colspan="2" align="center"> <input type="submit" value="Отправить"/> </td>
+		</tr>
+	  </table>
+	</form>
+	
+	<br>
+	<!-- Поле ввода пароля -->
+	<form>
+	Введите пароль: <input type="password" name="pass"/> <input type="submit" value="Отправить"/>
+	</form>
+	
+	<br>
+	<!-- Флажок -->
+	<form>
+	Как вы относитесь к учебе ? <br>
+	<input type="checkbox" name="study" value="1"/> Положительно <br>
+	<input type="checkbox" name="study" value="2"/> Нейтрально <br>
+	<input type="checkbox" name="study" value="3"/> Отрицательно <br>
+	</form>
+	
+	<br>
+	<!-- Радио-кнопка -->
+	<form>
+	Выберите ваш пол: <br>
+	<input type="radio" name="s" value="male"/> Мужской <br>
+	<input type="radio" name="s" value="female"/> Женский
+	</form>
+	
+	<br>
+	<!-- Выпадающий список -->
+	<form>
+	Выберите ваш пол:
+	<select name="sex">
+	<option value="m"> Мужской </option>
+	<option value="f"> Женский </option>
+	</select>
+	</form>
+	
+	<br>
+	<!-- Выбор одновременно несколько элементов -->
+	<p>В данном списке может быть одновременно выбрано несколько значений (для этого зажмите клавишу Ctrl и щелкайте на необходимые элементы): </p>
+    <form>
+    <select name='city' multiple='multiple'>
+    <option value='london'>Лондон</option>
+    <option value='moscow'>Москва</option>
+    <option value='newyork'>Нью Йорк</option>
+    </select>
+    </form>
+
+	<br>
+	<!-- Заголовки в формах при помощи <legend> и группировка при помощи <fieldset> -->
+	<form>
+    <fieldset>
+    <legend>Данные о пользователе</legend>
+    Имя: <br /><input type="text" name="firstname" /><br />
+    Фамилия:<br /> <input type="text" name="lastname" /><br />
+    Отчество: <br /><input type="text" name="lastname" /><br />
+    <p>Укажите Ваш пол:</p>
+    <input type="radio" name="s" value="m" /> Мужской<br />
+    <input type="radio" name="s" value="f" /> Женский
+    </fieldset>
+    <fieldset>
+    <legend> Анкета: </legend>
+    <p>Как Вы относитесь к полетам в космос:</p>
+    <input type="checkbox" name="space" value="1" /> 
+    Положительно, всегда хотел полететь в космос<br />
+    <input type="checkbox" name="space" value="2" /> 
+    Безразлично, никогда не думал об этом серьезно <br />
+    <input type="checkbox" name="space" value="3" /> 
+    Отрицательно, меня с детства отталкивают мысли о космосе <br />
+   </fieldset>
+   </form>
+
+   <br>
+   <br>
+   <!------ Использование новых HTML5 форм ------>
+   <!-- Использование формы email -->
+   <form>
+   Введите ваш email: <input type="email" name="email"/> <input type="submit" value="Отправить"/>
+   </form>
+ 
+    <br>
+	<!-- Использование формы url -->
+	
+  </body>
+
+</html>
